@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://m53nqxkbkuku"]
+
+[ext_resource type="Texture2D" uid="uid://cb4nxuwxr28lo" path="res://img/descarga.jpg" id="1_q0xg8"]
+[ext_resource type="PackedScene" uid="uid://b4nq5rni0oe2y" path="res://ropa.tscn" id="2_yogrx"]
+[ext_resource type="PackedScene" uid="uid://bitrl32jww5yg" path="res://medias.tscn" id="3_yogrx"]
+
+[node name="Inicio" type="Node2D"]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(360, 730)
+scale = Vector2(4.86486, 9.86487)
+texture = ExtResource("1_q0xg8")
+metadata/_edit_lock_ = true
+
+[node name="Ropa" parent="." instance=ExtResource("2_yogrx")]
+
+[node name="Medias" parent="." instance=ExtResource("3_yogrx")]
